@@ -27,6 +27,9 @@ gem 'turbolinks'
 # Build JSON APIs with ease. Read more: https://github.com/rails/jbuilder
 gem 'jbuilder', '~> 1.2'
 
+# Use hydra 
+gem 'hydra', '~> 6.0.0', :require => 'hydra6'
+
 group :doc do
   # bundle exec rake doc:rails generates the API under doc/api.
   gem 'sdoc', require: false
@@ -43,3 +46,11 @@ end
 
 # Use debugger
 # gem 'debugger', group: [:development, :test]
+
+gem "devise", "3.0.0.rc"
+gem "devise-guests", "~> 0.3"
+gem "bootstrap-sass"
+group :development, :test do
+  gem "rspec-rails"
+  gem "jettywrapper"
+end
